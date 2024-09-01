@@ -1,6 +1,11 @@
-streamlit
-pandas
-matplotlib
-networkx
-scikit-learn
-nltk
+streamlit==1.38.0
+pandas==2.2.2
+matplotlib==3.9.2
+seaborn==0.12.2
+networkx==3.3
+nltk==3.9.1
+scikit-learn==1.5.1
+scipy==1.14.1
+gensim==4.3.3
+pyLDAvis==3.4.0
+spacy==3.6.0
