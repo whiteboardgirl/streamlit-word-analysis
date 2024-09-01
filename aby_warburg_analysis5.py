@@ -7,7 +7,6 @@ from nltk import ngrams
 from collections import Counter
 from sklearn.decomposition import PCA
 from gensim.models import Word2Vec
-from wordcloud import WordCloud
 import nltk
 from nltk.corpus import stopwords
 
@@ -42,14 +41,6 @@ if uploaded_file:
 
         # Remove stopwords and non-alphabetic tokens
         words = [word for word in words if word.isalpha() and word not in stop_words]
-
-        # Word Cloud
-        st.subheader("Word Cloud")
-        wordcloud = WordCloud(width=800, height=400, background_color='white').generate(' '.join(words))
-        plt.figure(figsize=(10, 5))
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis('off')
-        st.pyplot(plt)
 
         # Word Connection Visualization
         st.subheader("Word Connection Network")
