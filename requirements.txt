@@ -9,3 +9,4 @@ scipy==1.14.1
 gensim==4.3.3
 pyLDAvis==3.4.0
 spacy==3.6.0
+wordcloud==1.9.1.1
